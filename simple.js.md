@@ -9,6 +9,27 @@
 </script>
 ```
 
+```
+<style>p { color: blue;  cursor: pointer;}</style>
+<p id="text" >안녕하세요!</p>
+<script>
+  const text = document.getElementById('text');
+
+  //text.onclick = () => {
+  //  text.style.color = (text.style.color === 'red') ? 'blue' : 'red';
+  //};
+  
+  function changeTextColor() {
+    if (text.style.color === 'red') {
+      text.style.color = 'blue';
+    } else {
+      text.style.color = 'red';
+    }
+  }
+  text.onclick = changeTextColor;
+</script>
+```
+
 이 코드는 HTML, CSS, JavaScript를 사용해서 간단한 텍스트 색상 변경 기능을 구현한 예제야. 쉽게 설명해 줄게.
 
 ### HTML
