@@ -53,3 +53,13 @@ alert("안녕, 자바스크립트!");
 - **기초 튜토리얼**: [https://ko.javascript.info](https://ko.javascript.info)
 - **유튜브 강의**: "자바스크립트 기초"로 검색
 - **코딩 실습 사이트**: [https://codepen.io](https://codepen.io), [https://replit.com](https://replit.com)
+
+
+## 또다른 예제, F12 누르고
+```
+const box = document.createElement("div");
+box.innerHTML = `<me style="font-size:24px; cursor:pointer; color:blue;">국립경국대학교</me>`;
+box.style = "position:fixed;top:20px;left:20px;background:#f0f0f0;padding:20px;border:1px solid #ccc;border-radius:8px";
+document.body.appendChild(box);
+box.querySelector("me").onclick = () => window.open("https://www.gknu.ac.kr", "_blank");
+```
