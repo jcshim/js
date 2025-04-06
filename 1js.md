@@ -1,3 +1,4 @@
+```
 (function(){
     "use strict";
     function greetMe(a){
@@ -5,3 +6,4 @@
     }
     greetMe("Shim");
 })();
+```
